@@ -3,53 +3,30 @@ import java.time.LocalDate;
 
 public class Cliente {
     private String nome;
-    private double cpf;
-    private LocalDate dataDeNascimento;
-    private String endereco;
+    private String cpf;
+    private LocalDate dataNascimento;
+    private Endereço endereço;
 
-public Cliente(String nome, double cpf, LocalDate dataDeNascimento, String endereco) {
-    this.nome = nome;
-    this.cpf = cpf;
-    this.dataDeNascimento = dataDeNascimento;
-    this.endereco = endereco;
+    public Cliente(String nome, String cpf, LocalDate dataNascimento, Endereço endereço) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
+        this.endereço = endereço;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public double getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(double cpf) {
-        this.cpf = cpf;
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
     }
 
-    public LocalDate getDataDeNascimento() {
-        return dataDeNascimento;
-    }
-
-    public void setDataDeNascimento(LocalDate dataDeNascimento) {
-        this.dataDeNascimento = dataDeNascimento;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public String toString() {
-        return "\nNome: " + this.getNome() +
-               "\nCPF: " + this.getCpf() +
-               "\nData de Nascimento: " + this.getDataDeNascimento() +
-               "\nEndereço: " + this.getEndereco();
+    public Endereço getEndereço() {
+        return endereço;
     }
 }
