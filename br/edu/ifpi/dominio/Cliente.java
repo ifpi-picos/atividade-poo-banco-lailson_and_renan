@@ -5,9 +5,9 @@ public class Cliente {
     private String nome;
     private String cpf;
     private LocalDate dataNascimento;
-    private Endereço endereço;
+    private Endereco endereço;
 
-    public Cliente(String nome, String cpf, LocalDate dataNascimento, Endereço endereço) {
+    public Cliente(String nome, String cpf, LocalDate dataNascimento, Endereco endereço) {
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
@@ -26,7 +26,7 @@ public class Cliente {
         return dataNascimento;
     }
 
-    public Endereço getEndereço() {
+    public Endereco getEndereço() {
         return endereço;
     }
 }

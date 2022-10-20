@@ -1,10 +1,10 @@
 package br.edu.ifpi.dominio;
 
-public class ContaPoupança extends Conta {
+public class ContaPoupanca extends Conta {
 
     private double rendimento;
 
-    public ContaPoupança(int agencia, int numero, double saldo, String cliente, double rendimento) {
+    public ContaPoupanca(int agencia, int numero, double saldo, String cliente, double rendimento) {
         super(agencia, numero, saldo, cliente);
         this.rendimento = rendimento;
     }

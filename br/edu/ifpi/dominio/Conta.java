@@ -43,13 +43,4 @@ public class Conta {
         this.saldo -= saldo;
         destinatario.saldo += saldo;
     }
-
-    public void getDadosConta() {
-        System.out.println();
-        System.out.println("Agẽncia: " + getAgencia());
-        System.out.println("Conta: " + getNumero());
-        System.out.println("Saldo: " + getSaldo());
-        System.out.println("Proprietário: " + getCliente());
-        System.out.println();
-    }
 }
