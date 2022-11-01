@@ -4,10 +4,10 @@ public class Conta {
     private int agencia;
     private int numero;
     private double saldo;
-    private String cliente;
+    private Cliente cliente;
     private Notificacao notificacao;
  
-    public Conta(int agencia, int numero, double saldo, String cliente, Notificacao notificacao) {
+    public Conta(int agencia, int numero, double saldo, Cliente cliente, Notificacao notificacao) {
         this.agencia = agencia;
         this.numero = numero;
         this.saldo = saldo;
@@ -27,7 +27,7 @@ public class Conta {
         return saldo;
     }
 
-    public String getCliente() {
+    public Cliente getCliente() {
         return cliente;
     }
 
