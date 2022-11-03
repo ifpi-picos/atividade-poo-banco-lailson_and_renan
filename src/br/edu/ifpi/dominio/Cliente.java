@@ -29,4 +29,12 @@ public class Cliente {
     public Endereco getEndereco() {
         return endereco;
     }
+
+    @Override
+    public String toString() {
+        return "[" + this.getCpf() + ", " 
+                   + this.getNome() + ", " 
+                   + this.getDataNascimento() + ", " 
+                   + this.getEndereco() + "]";
+    }
 }

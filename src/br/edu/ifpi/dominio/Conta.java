@@ -1,26 +1,26 @@
 package br.edu.ifpi.dominio;
 
 public class Conta {
-    private int agencia;
-    private int numero;
+    private int numAgencia;
+    private int numConta;
     private double saldo;
     private Cliente cliente;
     private Notificacao notificacao;
  
-    public Conta(int agencia, int numero, double saldo, Cliente cliente, Notificacao notificacao) {
-        this.agencia = agencia;
-        this.numero = numero;
+    public Conta(int numAgencia, int numConta, double saldo, Cliente cliente, Notificacao notificacao) {
+        this.numAgencia = numAgencia;
+        this.numConta = numConta;
         this.saldo = saldo;
         this.cliente = cliente;
         this.notificacao = notificacao;
     }
 
-    public int getAgencia() {
-        return agencia;
+    public int getnumAgencia() {
+        return numAgencia;
     }
 
-    public int getNumero() {
-        return numero;
+    public int getnumConta() {
+        return numConta;
     }
 
     public double getSaldo() {
